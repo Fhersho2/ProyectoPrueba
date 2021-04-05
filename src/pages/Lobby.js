@@ -34,9 +34,12 @@ function Lobby(props) {
                   name="password"
                 />
               </div>
-              <button  className="btn btn-primary">
-                Inciar Sesion
-              </button>
+              <div className="form-btn">
+                <button  className="btn btn-primary btn-sm">
+                  Iniciar Sesion
+                </button>
+              </div>
+             
             </form>
           </div>
         </div>

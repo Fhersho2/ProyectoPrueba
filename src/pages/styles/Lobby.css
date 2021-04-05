@@ -1,0 +1,45 @@
+.principal-section {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 75vh;
+    border: 2px solid blue;
+}
+
+.principal-layer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.principal-image {
+    position: absolute;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.layer-item {
+    color: #ffffff;
+    text-align: justify;
+    width: 500px;
+}
+
+.sesion-form {
+    justify-content: center;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5%;
+    width: 500px;
+    padding: 5em;
+}
+
+.sesion-form .form_title h5{
+    text-align: center;
+}
+

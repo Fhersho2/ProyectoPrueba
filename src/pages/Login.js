@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./styles/Lobby.css";
 import Fondo from "../images/astronaut.jpg";
 
@@ -39,11 +40,11 @@ function Lobby(props) {
                   Iniciar Sesion
                 </button>
               </div>
-             
             </form>
           </div>
         </div>
       </header>
+      <Footer />
     </div>
   );
 }

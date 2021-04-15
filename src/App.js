@@ -1,11 +1,11 @@
 
 import React from 'react';
-import Lobby from './pages/Lobby';
+import Login from './pages/Login';
 
 function App() {
     return (
         <div>
-            <Lobby />
+            <Login/>
         </div>
     );
 }

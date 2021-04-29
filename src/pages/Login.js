@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./styles/Lobby.css";
 import Fondo from "../images/astronaut.jpg";
@@ -30,7 +29,6 @@ function Lobby(props) {
   return (
     <div className="container_fluid">
       <header>
-        <Navbar />
         <div className="principal-section">
           <img src={Fondo} className="principal-image" alt="Estudiantes"></img>
           <div className="principal-layer">

@@ -6,14 +6,14 @@ import React from 'react'
 // Styles
 //import './style.css'
 
-function Dashboard(){
+const Page404 = () => {
 
   return (
     <div className=''>
-        <h1>bienvenido al dashboard</h1>
+        <h1>Error 404</h1>
     </div>
   )
 }
 
 
-export default Dashboard;
+export default Page404

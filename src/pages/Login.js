@@ -4,27 +4,46 @@ import "./styles/Lobby.css";
 import Fondo from "../images/astronaut.jpg";
 import { useState, useEffect } from "react";
 import Axios from 'axios';
+import { Redirect, useLocation} from 'react-router-dom';
+import {dashboard} from '../components/routes';
+
+
 
 function Lobby(props) {
   const name = "Alumnos";
   const [userName, setUserName] = useState();
   const [userPass, setUserpass] = useState();
   const [loginStatus, setLoginStatus] = useState();
+ 
 
   const login = () => {
     Axios.post("http://localhost:3001/api/auth", {
       username: userName,
       password: userPass,
     }).then((response) => {
-      console.log(response.data)
+      
+        if(response.data.session === true){
+          localStorage.setItem('token', JSON.stringify(response.data));
+          const token = JSON.parse(localStorage.getItem('token'));
+          console.log(token);
+          setLoginStatus(true)
+          if(loginStatus){
+            return <Redirect to={dashboard()} />;
+          }
+        }else{
+          console.log(response.data.message)
+          setLoginStatus(false)
+        }
+      
     });
   };
-
+  // comprobacion de la session
+  if(window.localStorage.getItem('token')){
+    return <Redirect to={dashboard()} />;
+  }
+ 
   
-
-  useEffect(() =>{
-    
-   }, [])
+  
   
   return (
     <div className="container_fluid">

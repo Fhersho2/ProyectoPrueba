@@ -5,7 +5,7 @@ import React, {useEffect, useState} from 'react'
 import {logOut} from '../components/logOut';
 import { Redirect} from 'react-router-dom';
 // Styles
-//import './style.css'
+import './styles/dashboard.css'
 
 function Dashboard(props){
   const [asLoged, setHasLoged] = useState(true);
@@ -24,9 +24,13 @@ function Dashboard(props){
 
 
   return (
-    <div className=''>
-        <h1>bienvenido al dashboard</h1>
-        <button type='button' onClick={hangleLogout}>cerrar sesion</button>
+    <div className='principal-section-dashboard'>
+        <div className="sidebar-section">
+
+        </div>
+        <div className="content-section container-fluid">
+
+        </div>
     </div>
   )
 }

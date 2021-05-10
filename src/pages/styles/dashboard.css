@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal-section-dashboard{
+    width: 100%;
+    height: 93.6vh;
+    display: flex;
+    
+}
+/*--- inicio de la seccion del sidebar ---*/
+.principal-section-dashboard .sidebar-section{
+    width: 250px;
+    height: 100%;
+    background: grey
+}
+/*--- inicio de la seccion del contenido ---*/
+.principal-section-dashboard .content-section{
+    background: rgb(76, 76, 184);
+}

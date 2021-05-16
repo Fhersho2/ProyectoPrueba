@@ -19,10 +19,8 @@ function Dashboard(props){
     setHasLoged(false);
     window.location.href = '/';
   }
-  useEffect(() =>{
-    
-    
-  }, [])
+  //useEffect(() =>{
+  //}, [])
 
   
 

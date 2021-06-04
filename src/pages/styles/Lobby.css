@@ -3,14 +3,14 @@
     margin: 0;
     width: 100%;
     height: 75vh;
-    border: 2px solid blue;
+    
 }
 
 .principal-layer{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 5em;
     background: rgba(0, 0, 0, 0.3);
@@ -31,14 +31,24 @@
 }
 
 .sesion-form {
-    justify-content: center;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5%;
     width: 500px;
-    padding: 5em;
-}
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
 
+}
+.sesion-form .form-content{
+    width: 350px;
+    height: auto;
+}
+.sesion-form .form-item{
+    margin: 10px 0;
+}
 .sesion-form .form_title h5{
     text-align: center;
 }

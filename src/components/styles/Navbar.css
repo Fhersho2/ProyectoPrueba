@@ -31,8 +31,8 @@
 }
 
 .Navbar .container_nav .nav_left  .Navbar__brand-logo{
-    width: 80px;
-    padding-right: 1em;
+    width: 70px;
+    height: 50px;
     object-fit: cover;
 }
 

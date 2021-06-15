@@ -1,6 +1,6 @@
 // Dependencies
 import React, { useEffect, useState } from 'react'
-import { Modal, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 // Components
 import { logOut } from '../components/logOut';
 

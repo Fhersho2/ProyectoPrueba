@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -12,6 +13,7 @@ function ControlPanel(props) {
     .get(`http://localhost:3001/api/alumnos/${NoControl}`)
     .then((response) => {
       setStudentsData(response.data[0]);
+      console.log(response.data);
     })
     .catch((error) => {
       console.log(error);
@@ -19,8 +21,9 @@ function ControlPanel(props) {
   }
 
   useEffect(() =>{
-   getStudents();
-  },[]);
+    getStudents();
+  },[]) ;
+
 
 
  

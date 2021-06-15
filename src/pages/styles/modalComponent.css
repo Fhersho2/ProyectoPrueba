@@ -1,0 +1,51 @@
+form {
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+}
+
+.form-title {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.form-info {
+    max-width: 400px;
+}
+
+.form-info-name .first-name{
+    padding: 0.5em;
+}
+
+.form-info-name .credit-card-number {
+    padding: 0.5em;
+}
+
+.form-select-pay {
+    padding: 0.5em;
+}
+
+.form-credit-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.credit-card-expiration{
+    display: flex;
+}
+
+.credit-card-cvc {
+    padding-right: 0.5em
+}
+
+/* .credit-card-expiration .credit-card-month{
+    padding-right: 0.5em;
+}
+
+.credit-card-expiration .credit-card-year{
+    padding-left: 0.5em;
+} */
+
+
